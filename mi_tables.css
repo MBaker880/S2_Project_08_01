@@ -14,12 +14,41 @@
 */
 
 /* Table Styles */
+table {
+   background: linear-gradient(to bottom, rgb(190, 215, 255), black);
+   border: 5px solid gray;
+}
 
+th, td {
+   border: 3px solid gray;
+   line-height: 1.4em;
+   padding: 8px;
+}
 
+th {
+   background-color: black;
+   color: rgb(130, 210, 255);
+   font-weight: normal;
+}
+
+td {
+   color: white;
+   font-size: 0.9em;
+   text-align: top;
+}
 
 /* Column Styles */
+col#firstCol {
+   -moz-column-width: 24%;
+   -webkit-column-width: 24%;
+   column-width: 24%;
+}
 
-
+col.dataCols {
+   -moz-column-width: 19%;
+   -webkit-column-width: 19%;
+   column-width: 19%;
+}
 
 /* Table Header Styles */
 
