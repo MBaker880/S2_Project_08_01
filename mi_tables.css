@@ -14,23 +14,27 @@
 */
 
 /* Table Styles */
+/* Set table's background to have a linear color gradient with the border specified. */
 table {
    background: linear-gradient(to bottom, rgb(190, 215, 255), black);
    border: 5px solid gray;
 }
 
+/* Gives both the th and td elements a border of choice, a specified */
 th, td {
    border: 3px solid gray;
    line-height: 1.4em;
    padding: 8px;
 }
 
+/* Sets the background color, the font color, and the fonts weight of the table head element. */
 th {
    background-color: black;
    color: rgb(130, 210, 255);
    font-weight: normal;
 }
 
+/* Sets font color, font size, and the text align of the table description element. */
 td {
    color: white;
    font-size: 0.9em;
@@ -38,26 +42,32 @@ td {
 }
 
 /* Column Styles */
+/* Sets width of specific column's widths so that the rule renders in all web browsers. */
 col#firstCol {
    -moz-column-width: 24%;
    -webkit-column-width: 24%;
-   column-width: 24%;
+   width: 24%;
 }
 
+/* Sets width of specific column's widths so that the rule renders in all web browsers. */
 col.dataCols {
    -moz-column-width: 19%;
    -webkit-column-width: 19%;
-   column-width: 19%;
+   width: 19%;
 }
 
 /* Table Header Styles */
+/* Set the thead's table rows to have a height of 60px. */
 thead tr {
    height: 60px;
 }
 
+/* Sets the first head of the first row in the table head to be 1.4em in size for the font. */
 thead tr:first-of-type th:first-of-type {
    font-size: 1.4em;
 }
+
+/* Sets everything but the first head element in the first row located in the table head to be transparent with the font color black. */
  thead tr:first-of-type th:not(:first-of-type) {
    background-color: transparent;
    color: black;
